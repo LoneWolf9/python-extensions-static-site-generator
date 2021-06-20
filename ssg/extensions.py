@@ -8,5 +8,5 @@ def load_module(self, directory, name):
     sys.path.pop(0)
 
 def load_directory(self, directory):
-    for directory in path.__iter__(Path.rglob(".py")):
+    for path in directory.rglob(".py"):
         load_module(directory.as_posix(), path.stem)
