@@ -1,6 +1,6 @@
 _callbacks = {}
 
-def register(self, hook=0):
-    def register_callback(self, func):
+def register(hook, order=0):
+    def register_callback(func):
         return func
     return register_callback
