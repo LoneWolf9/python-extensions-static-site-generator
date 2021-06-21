@@ -6,7 +6,7 @@ start_time = None
 total_written = 0
 
 
-@hook.event("start_build")
+@hook.register("start_build")
 def start_build():
     global start_time
     start_time.gmtime()
